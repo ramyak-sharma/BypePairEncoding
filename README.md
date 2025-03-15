@@ -23,6 +23,10 @@ cd BypePairEncoding
 ## How to use
 - Change the content of "text.txt" to what to wish.
 
+### Dependencies
+- CMake
+- Graphviz
+
 ### Build
 - Run the following commands on terminal after cloning.
 ```
