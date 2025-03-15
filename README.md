@@ -19,4 +19,11 @@ This project implements a **Byte Pair Encoding (BPE)** algorithm in C++ — a po
 ```bash
 git clone git@github.com:ramyak-sharma/BypePairEncoding.git
 cd BypePairEncoding
-
+```
+## How to use
+- Create a text file (name it text.txt)
+- After running the code. You will get an output bpe_graph.dot
+- Then run the following command on the terminal:
+```
+dot -Tpng bpe_graph.dot -o bpe_graph.png
+```

@@ -130,6 +130,9 @@ void generate_graphviz(const vector<array<int, 2>> &vocab, const string &filenam
 
     file << "digraph BPE_Tokens {\n";
     file << "    node [shape=ellipse, fontname=\"Helvetica\", fontsize=14, color=blue];\n";
+	file << "    ratio=fill;\n";
+	file << "    size=\"10,6\";\n"; // Width x Height in inches
+
 
     // Output nodes and edges for each vocab entry
     for (int i = 256; i < vocab_index; i++) {
@@ -155,7 +158,15 @@ void generate_graphviz(const vector<array<int, 2>> &vocab, const string &filenam
 
 int main()
 {
-	string init_string = "The original BPE algorithm operates by iteratively replacing the most common contiguous sequences of characters in a target text with unused 'placeholder' bytes. The iteration ends when no sequences can be found, leaving the target text effectively compressed. Decompression can be performed by reversing this process, querying known placeholder terms against their corresponding denoted sequence, using a lookup table. In the original paper, this lookup table is encoded and stored alongside the compressed text.";
+	ifstream file("text.txt");
+	if(!file){
+		cerr<<"file opening error\n";
+		return 1;
+	}
+
+	string init_string((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
+
+	file.close();
 	
 	vector<int> int_str;
 
