@@ -120,7 +120,7 @@ void print_tokens(vector<array<int, 2>> &vocab){
 }
 
 
-void generate_graphviz(const vector<array<int, 2>> &vocab, const string &filename) {
+void generate_graphviz(const vector<array<int, 2>> &vocab, const string &filename) { //THIS function is AI generated
     ofstream file(filename);
 
     if (!file.is_open()) {
