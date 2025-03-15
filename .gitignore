@@ -1,5 +1,5 @@
 # Ignore build files
-bpe_encoder
+o
 *.o
 
 # Ignore generated Graphviz output
