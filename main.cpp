@@ -158,7 +158,7 @@ void generate_graphviz(const vector<array<int, 2>> &vocab, const string &filenam
 
 int main()
 {
-	ifstream file("text.txt");
+	ifstream file("../text.txt");
 	if(!file){
 		cerr<<"file opening error\n";
 		return 1;
