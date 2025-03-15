@@ -22,8 +22,9 @@ cd BypePairEncoding
 ```
 ## How to use
 - Create a text file (name it text.txt)
-- After running the code. You will get an output bpe_graph.dot
+- After running the code. You will get an output `bpe_graph.dot`.
 - Then run the following command on the terminal:
 ```
-dot -Tpng bpe_graph.dot -o bpe_graph.png
+dot -Tpng -Gdpi=1500 bpe_graph.dot -o bpe_graph.png
 ```
+- if the quality seems too low, increase the Gdpi.
