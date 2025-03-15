@@ -1,0 +1,16 @@
+# Ignore build files
+bpe_encoder
+*.o
+
+# Ignore generated Graphviz output
+bpe_graph.dot
+bpe_graph.png
+
+# Ignore temporary files
+*.tmp
+*.log
+*.cache
+
+# Ignore MacOS system files (if applicable)
+.DS_Store
+
