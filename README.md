@@ -21,8 +21,23 @@ git clone git@github.com:ramyak-sharma/BypePairEncoding.git
 cd BypePairEncoding
 ```
 ## How to use
-- Create a text file (name it text.txt)
-- After running the code. You will get an output `bpe_graph.dot`.
+- Change the content of "text.txt" to what to wish.
+
+### Build
+- Run the following commands on terminal after cloning.
+```
+mkdir build && cd build
+```
+```
+cmake ..
+```
+```
+make
+```
+```
+./bpe_encoder
+```
+- You will get an output `bpe_graph.dot`.
 - Then run the following command on the terminal:
 ```
 dot -Tpng -Gdpi=1500 bpe_graph.dot -o bpe_graph.png

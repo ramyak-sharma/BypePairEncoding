@@ -1,4 +1,6 @@
 # Ignore build files
+/build/
+Makefile
 o
 *.o
 
